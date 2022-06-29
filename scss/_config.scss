@@ -1,0 +1,15 @@
+$primary-color: #fff;
+$secondary-color: #f93d72c5;
+$third-color:rgb(248, 150, 180);
+$fourth-color: #373737;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin transition-ease {
+    transition: all 0.3s ease-in-out;
+}
+

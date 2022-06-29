@@ -1,0 +1,68 @@
+@import 'config';
+@import 'home';
+@import 'menu';
+
+
+body {
+    background: $primary-color;
+    color: $fourth-color;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
+    background:linear-gradient(
+        to right,
+        rgba($fourth-color, 0.6),
+        rgba($primary-color, 0.2)
+    ),
+    url('../img/main-img.jpg') center bottom;
+    background-size: cover;
+
+}
+
+.page-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+
+
+.social-icons {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    
+
+    a:link,
+    :visited {
+        
+           color: rgba(255, 255, 255, 0.874);
+           text-decoration: none;
+
+           padding: 0.1rem;
+           @include transition-ease;
+       
+           &:hover{
+               color: $third-color;
+           }
+       }
+    
+     
+
+}
+
+
+
+footer {
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0.4rem;
+    right: 1rem;
+    text-align: right;
+    padding: 1rem;
+    color: $primary-color;
+}
+
+
