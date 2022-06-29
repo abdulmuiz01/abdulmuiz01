@@ -1,0 +1,303 @@
+.main-home{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+  
+ }
+ 
+ 
+ .home{
+    font-size: large;  
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 17vh;
+ }
+
+hr {
+    width: 80%;
+    margin-top: 3vh;
+    margin-bottom: 0vh;
+    color: $fourth-color;
+    border-width:6;        
+}
+
+
+
+.home-links{
+    
+    
+            
+    &__item{
+       
+        display: flex;
+        justify-content: center;
+        margin-top: 0vh;
+        margin-bottom: 1vh;
+        border-radius: 5px;
+      
+
+        &__vis{
+            background:linear-gradient(
+                to right,
+                rgba($fourth-color, 0.6),
+                rgba($primary-color, 0.2)
+            ),
+            url('../img/img2.jpg') center;
+            background-size: cover;
+        }
+
+        &__eat{
+            background:linear-gradient(
+                to right,
+                rgba($fourth-color, 0.6),
+                rgba($primary-color, 0.2)
+            ),
+            url('../img/img7.jpg') center ;
+            background-size: cover;
+        }
+
+        &__shop{
+            background:linear-gradient(
+                to right,
+                rgba($fourth-color, 0.6),
+                rgba($primary-color, 0.2)
+            ),
+            url('../img/img-shopping.jpg') center ;
+            background-size: cover;
+        }
+
+        &__lodg{
+            background:linear-gradient(
+                to right,
+                rgba($fourth-color, 0.6),
+                rgba($primary-color, 0.2)
+            ),
+            url('../img/img-ldg.jpg') center ;
+            background-size: cover;
+        }
+         
+        
+        a{
+            display: flex;
+            justify-content:center;
+            width: 20vh;
+            padding: 2vh;        
+            border-radius: 5px;
+            transition: width 0.6s;
+            @include transition-ease;
+
+            .lead{
+                margin-top: 1.5vh;
+                opacity: none;
+            }
+        
+            &:link,
+            :visited {
+               color: $primary-color;
+               text-decoration: none;
+           }
+
+            &:active{
+                width: 27vh;
+                padding: 5vh; 
+                color:$third-color;
+                
+                
+                .lead{ 
+                    @include transition-ease;                   
+                    font-size: xx-large;
+                    
+                }
+                         
+                
+            }              
+        }
+    }
+}
+ 
+
+
+@media only screen and (min-width: 576px){
+
+    .logo{
+        margin-left: 2vh;
+    }
+
+    .navbar{
+        background:rgb(248, 172, 194); 
+    }
+    
+
+
+    h1{
+        margin-top: 20vh;
+    }
+
+    .container{
+        width: 720px;
+        height: 40vh;
+    }
+
+    .home-links{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+        
+        
+                
+        &__item{
+            display: flex;
+            justify-content: center;
+           
+            margin: 0vh;
+            border-radius: 5px;
+             
+            
+            a{
+                display: flex;
+                justify-content:center ;
+                width: 20vh;
+                padding: 40px;
+                margin: 1vh;
+                .lead{
+                    font-size: 1.75rem;
+                    font-weight: 370;
+                    
+                }
+                
+
+                
+                border-radius: 5px;
+                transition: width 0.6s;
+
+                @include transition-ease;
+                
+                &:link,
+                :visited {
+                   color: $primary-color;
+                   text-decoration: none;
+               }
+    
+                &:hover{
+                    width: 25vh;
+                    color:$third-color;
+                    font-size: 1.5rem;
+                             
+                    &:active{
+                        width: 20vh;
+                        padding: 40px; 
+                        color:$third-color;
+                        
+                        
+                        .lead{ 
+                            @include transition-ease;                   
+                            font-size:xl;
+                            
+                        }
+                    }        
+                }     
+            }
+        }
+    }
+
+
+    .carousel{
+        width: 50vh;
+        height: 25vh;
+        margin-bottom:9vh ;
+    }
+
+    .d-block{
+        width: 50vh;
+        height: 25vh;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1400px){
+
+    
+    .home{
+        font-size: large;  
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-top:20vh ;
+     }
+
+
+
+    .container{
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+    
+    .home-links{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 5vh;
+        
+    
+                
+        &__item{
+            display: flex;
+            justify-content: center;
+            margin: 1vh;
+            border-radius: 5px;
+             
+            
+            a{
+                display: flex;
+                justify-content:center ;
+                width: 20vh;
+                padding: 60px;
+                margin: 1px;
+             
+                border-radius: 5px;
+                transition: width 0.6s;
+
+                @include transition-ease;
+                
+                &:link,
+                :visited {
+                   color: $primary-color;
+                   text-decoration: none;
+                   
+               }
+    
+                &:hover{
+                    width: 27vh; 
+                    color:$third-color;
+                    font-size: 1.5rem;
+                             
+                    &:active{
+                        width: 27vh;
+                        padding: 60px; 
+                        color:$third-color;
+                        
+                        
+                        .lead{ 
+                            @include transition-ease;                   
+                            font-size:xl;
+                            
+                        }
+                                 
+                        
+                    }        
+                }              
+            }
+        }
+    }
+
+ 
+
+}
+
+

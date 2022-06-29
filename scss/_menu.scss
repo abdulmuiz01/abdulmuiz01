@@ -1,0 +1,34 @@
+
+
+.offcanvas{
+    background:$secondary-color;
+
+    h5{
+        color: $primary-color;
+        margin-top: 0.5vh;
+    }
+
+    .btn-close{
+        
+        margin-right: 0.5vh;
+    }
+
+    &-body{
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .d-flex{
+        margin-top: 2vh;
+    }
+
+    .btn{
+        color: $primary-color;
+        border-color: #fff;
+    }
+
+   
+}
+
+
+
+
